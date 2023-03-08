@@ -1,17 +1,22 @@
 import './App.css';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
-      <h1>🚧</h1>
-      <div className="gif">
-        <img src="/images/construction-doggy.gif" alt="Construction doggo"></img>
-      </div>
-      <h1>🚧</h1>
-      <h1>Under Construction</h1>
+    <Wrapper className="App">
+      {/* Nav */}
+      {/* Intro */}
+      {/* Skills */}
+      {/* Resume */}
+      {/* About me */}
       <a href="/pdf/EmitonAlvesResume.pdf" target="_blank"><h2>Resume</h2></a>
-    </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export default App;
