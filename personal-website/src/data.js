@@ -1,7 +1,14 @@
+function returnIcon(icon) {
+  return icon;
+}
+
 export const TOOLS = [
-  { tool: 'JavaScript', icon: '<i class="devicon-javascript-plain"></i>' },
-  { tool: 'HTML', icon: '<i class="devicon-html5-plain-wordmark"></i>' },
-  { tool: 'CSS', icon: '<i class="devicon-css3-plain-wordmark"></i>' },
+  { name: 'React', icon: returnIcon(<i className="devicon-react-original"/>) },
+  { name: 'JavaScript', icon:  returnIcon(<i className="devicon-javascript-plain"/>)},
+  { name: 'TypeScript', icon:  returnIcon(<i className="devicon-typescript-plain"/>)},
+  { name: 'HTML', icon: returnIcon(<i className="devicon-html5-plain-wordmark"/>) },
+  { name: 'CSS', icon: returnIcon(<i className="devicon-css3-plain-wordmark"/>) },
+  { name: 'Figma', icon: returnIcon(<i className="devicon-figma-plain colored"/>) },
 ];
 
 export const COMPANY_INFO = [
