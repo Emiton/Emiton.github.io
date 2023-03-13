@@ -22,7 +22,7 @@ const Header = styled.h2`
 
 const Text = styled.p`
 font-size: 24px;
-max-width: 60ch;
+max-width: 50ch;
 `;
 
 export default AboutMe;

@@ -11,7 +11,6 @@ function App() {
   return (
     <Wrapper className="App">
       <NavBar />
-      {/* <Spacer /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutMe />} />
