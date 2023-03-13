@@ -20,6 +20,7 @@ const IntroWrapper = styled.div`
   @media(max-width: 550px) {
     justify-self: revert;
     align-self: revert;
+    padding-top: revert;
   }
 `;
 

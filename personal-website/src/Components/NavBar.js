@@ -31,6 +31,10 @@ function NavBar() {
 const Logo = styled.img`
 width: 60px;
 margin-bottom: 40px;
+
+  @media(max-width: 550px) {
+    margin-bottom: 16px;
+  }
 `;
 
 const NavHeader = styled.ul`
