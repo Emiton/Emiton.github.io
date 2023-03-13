@@ -2,14 +2,17 @@ import styled from "styled-components";
 import { TOOLS } from "../data";
 
 function ToolTileCarousel() {
-  const toolList = TOOLS.map((tool) => 
-      <Tile>
-       <ToolName>{tool.name}</ToolName>
-       <ToolIcon>{tool.icon}</ToolIcon>
-      </Tile>
+  let index = 0
+  const toolList = TOOLS.map((tool) => {
+    index += 1
+    return (
+      <Tile key={index}>
+      <ToolName>{tool.name}</ToolName>
+      <ToolIcon>{tool.icon}</ToolIcon>
+     </Tile>
+    )
+  }
   )
-
-  // console.log(toolList)
 
   return(
     <Wrapper>
