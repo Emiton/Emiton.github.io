@@ -30,10 +30,4 @@ const Wrapper = styled.div`
   margin: 16px;
 `;
 
-
-
-// const Spacer = styled.div`
-//   flex: 1;
-// `;
-
 export default App;
