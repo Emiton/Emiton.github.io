@@ -1,64 +1,64 @@
-import CompanyInformation from './CompanyInformation';
-import SkillTile from './SkillTile';
 import styled from 'styled-components';
+import IntroDetail from './IntroDetail';
+
 
 function App() {
   return (
     <Wrapper className="App">
-      {/* Nav */}
-      {/* Intro */}
-      {/* Work History */}
-      {/* Technologies */}
-      {/* Resume */}
-      {/* About me */}
+      <Logo src ="images/logo-black-transparent-background.svg" alt="logo"/>
       <nav>
         <NavHeader>
-          <li>Skills</li>
-          <li>Resume</li>
-          <li>About me</li>
-          <li>Contact</li>
+          <LinkWrapper>Skills</LinkWrapper>
+          <LinkWrapper>Resume</LinkWrapper>
+          <LinkWrapper>About me</LinkWrapper>
+          <LinkWrapper>Contact</LinkWrapper>
         </NavHeader>
       </nav>
-      <Intro>Hi! My name is Emiton.</Intro>
-      <IntroDetail>I am a full-stack software engineer based out of the Greater Boston area.</IntroDetail>
-      <SectionTitle>Work History</SectionTitle>
-      <WorkHistory>
-        <CompanyInformation></CompanyInformation>
-        <CompanyInformation></CompanyInformation>
-        <CompanyInformation></CompanyInformation>
-      </WorkHistory>
-      <SectionTitle>Skills</SectionTitle>
-      <ul>
-        <li>Backend development for JavaScript and Java tech stacks</li>
-        <li>Developing cloud native applications on the Amazon Web Services (AWS) platform.</li>
-        <li>Leading software projects from design to testing to launch to maintaining software in production environments</li>
-        <li>Leading iniatives through SCRUM/Agile processes</li>
-        <li>Front-end development</li>
-        <li>Creating and maintaining production grade CI/CD infrastructure</li>
-      </ul>
-      <SectionTitle>Tools</SectionTitle>
-      <TileCarousel>
-        <SkillTile></SkillTile>
-        <SkillTile></SkillTile>
-        <SkillTile></SkillTile>
-      </TileCarousel>
-      <SectionTitle>Contact</SectionTitle>
-      {/* <a href="/pdf/EmitonAlvesResume.pdf" target="_blank"><h2>Resume</h2></a> */}
+      <Spacer />
+      <IntroWrapper>
+        <Intro>Hi! My name is Emiton.</Intro>
+        <IntroDetail />
+      </IntroWrapper>
+
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  background-color: hsl(60,100%,95%);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   font-family: 'Satoshi', sans-serif;
   padding: 16px;
+  margin: 16px;
 `;
 
-const NavHeader = styled.div`
+const Logo = styled.img`
+width: 60px;
+margin-bottom: 40px;
+`;
+
+const NavHeader = styled.ul`
   display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+`;
+
+const LinkWrapper = styled.li`
+ font-size: 24px;
+ padding-bottom: 6px;
+`;
+
+const Spacer = styled.div`
+  flex: 1;
+`;
+
+const IntroWrapper = styled.div`
+  justify-self: end;
+  align-self: flex-end;
+  padding-bottom: 20%;
+  /* TODO: Adjust padding for smaller screens, make it fluid 20%, then smaller */
+  padding-right: 20%;
 `;
 
 const Intro = styled.h1`
@@ -66,25 +66,6 @@ const Intro = styled.h1`
   font-weight: 900;
   max-width: 10ch;
   line-height: 1;
-`;
-
-const IntroDetail = styled.h2`
-  max-width: 40ch
-`;
-
-const SectionTitle = styled.h3`
-  font-size: 56px;
-  color: hsl(225, 59%, 11%);
-`;
-
-const WorkHistory = styled.div`
-`;
-
-
-
-const TileCarousel = styled.div`
-  display: flex;
-  overflow: auto;
 `;
 
 export default App;
