@@ -15,7 +15,7 @@ function AboutMe() {
         In my freetime I enjoy playing sports, expanding my culinary knowledge, and exploring both my community and the world at large.
       </Text>
       <Text>
-        I also love playing board games such as chess, table top strategy games, and card games like Uno. Anything where sound logic, good strategy, and a dash of finesse is appreciated.
+        I also love playing board games like chess, table top strategy games, and card games like Uno. Anything where sound logic, good strategy, and a dash of finesse is appreciated.
       </Text>
     </Wrapper>
   );
