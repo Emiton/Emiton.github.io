@@ -6,7 +6,7 @@ function IntroDetail() {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['^1500I am a full-stack software engineer based out of the Greater Boston area.'],
+      strings: ['^500I am a full-stack software engineer based out of the Greater Boston area.'],
       typeSpeed: 30,
     });
 
