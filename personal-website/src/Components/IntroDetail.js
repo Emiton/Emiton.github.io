@@ -6,7 +6,7 @@ function IntroDetail() {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['I am a full-stack software engineer based out of the Greater Boston area.'],
+      strings: ['^1500I am a full-stack software engineer based out of the Greater Boston area.'],
       typeSpeed: 30,
     });
 
@@ -23,7 +23,7 @@ function IntroDetail() {
 }
 
 const Wrapper = styled.h2`
-  max-width: 40ch
+  max-width: 40ch;
 `;
 
 export default IntroDetail;
