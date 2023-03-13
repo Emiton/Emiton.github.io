@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import SectionTitle from "./SectionTitle";
 
 function AboutMe() {
   return(
     <Wrapper>
-      <Header>About Me</Header>
+      <SectionTitle title='About me' />
       <Text>
         Nulla iaculis eu tellus varius pretium. Nulla ut efficitur nisi. Pellentesque sed molestie turpis. Phasellus eu congue lacus. Praesent placerat congue velit, nec fringilla metus consequat non. Integer sodales, lectus vel tincidunt tincidunt, nulla justo sagittis turpis, sit amet commodo leo erat a risus. In viverra dui libero, in dignissim tellus feugiat et. Nullam suscipit, quam placerat consequat pellentesque, sapien tellus vehicula neque, in ullamcorper ex elit ac urna. Sed quis accumsan risus. Mauris malesuada nisi ac odio vehicula vehicula. Maecenas viverra, diam non congue molestie, augue augue bibendum nisi, et condimentum dolor tellus et tortor. Curabitur libero sem, eleifend nec porttitor vehicula, maximus id tellus. Fusce tincidunt imperdiet massa, in egestas magna iaculis nec. Donec et est a quam iaculis dictum vitae sed risus. Nullam gravida ullamcorper nunc, in venenatis tortor convallis nec.
 
@@ -15,10 +16,7 @@ function AboutMe() {
 
 const Wrapper = styled.div``;
 
-const Header = styled.h2`
-  font-size: 48px;
-  margin-bottom: 16px;
-`
+
 
 const Text = styled.p`
 font-size: 24px;

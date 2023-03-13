@@ -17,6 +17,10 @@ const IntroWrapper = styled.div`
   padding-bottom: 20%;
   /* TODO: Adjust padding for smaller screens, make it fluid 20%, then smaller */
   padding-right: 20%;
+
+  @media(max-width: 550px) {
+    padding-right: revert;
+  }
 `;
 
 const Intro = styled.h1`
@@ -24,6 +28,10 @@ const Intro = styled.h1`
   font-weight: 900;
   max-width: 10ch;
   line-height: 1;
+
+  @media(max-width: 550px) {
+    padding-bottom: 16px;
+  }
 `;
 
 export default Home;
