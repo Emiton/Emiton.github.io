@@ -21,7 +21,7 @@ export const COMPANY_INFO = [
     jobTitle: 'Full-stack Software Engineer',
     workLocation: 'Westborough, MA',
     workDates: 'June 2021 - Present',
-    workDescription: 'My role with Amazon Go entails full-stack development work using a JavaScript based tech stack. On the services team I mainly create services for various internal services within the Amazon Go ecosystem. I also write end to end features for internal teams and customers. I collaborate with the product team for front-end design. I have created both web and mobile apps. AWS powers the backend, utilizing serverless technology to build performant apps and services that scale under varying loads.',
+    workDescription: 'My role with Amazon Go entails full-stack development using a JavaScript based tech stack. On the services team I mainly create services for various internal products within the Amazon Go ecosystem. I also write end to end features for internal teams and customers. I generally collaborate with the product team for front-end design. I have created both web and mobile apps. AWS powers the backend, utilizing serverless technology to build performant apps and services that scale under varying loads.',
   },
   {
     companyName: 'Amazon Robotics',
