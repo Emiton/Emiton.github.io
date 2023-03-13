@@ -52,6 +52,7 @@ const Tile = styled.span`
 const Wrapper = styled.div`
   display: flex;
   overflow: auto;
+  margin-bottom: 16px;
 `;
 
 export default ToolTileCarousel;

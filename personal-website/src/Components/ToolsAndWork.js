@@ -1,3 +1,4 @@
+import CompanyInformation from "./CompanyInformation";
 import SectionTitle from "./SectionTitle";
 import ToolTileCarousel from "./ToolTileCarousel";
 
@@ -7,6 +8,7 @@ function ToolsAndWork() {
       <SectionTitle title='Tools' />
       <ToolTileCarousel />
       <SectionTitle title='Work History' />
+      <CompanyInformation />
     </>
   );
 }

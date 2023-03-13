@@ -9,8 +9,11 @@ function CompanyInformation() {
       <WorkWrapper key={index}>
       <CompanyName>{company.companyName}</CompanyName>
       <JobTitle>{company.jobTitle}</JobTitle>
-      <WorkLocation>{company.workLocation}</WorkLocation>
-      <WorkDates>{company.workDates}</WorkDates>
+      <LocationDate>
+        <WorkLocation>{company.workLocation}</WorkLocation>
+        <p>•</p>
+        <WorkDates>{company.workDates}</WorkDates>
+      </LocationDate>
       <WorkDescription>{company.workDescription}</WorkDescription>
       </WorkWrapper>
     )
@@ -33,7 +36,16 @@ const CompanyName = styled.p`
   font-weight: 900;
 `;
 
-const JobTitle = styled.p``;
+const JobTitle = styled.p`
+  font-size: 20px;
+`;
+
+const LocationDate = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+`
 
 const WorkLocation = styled.p``;
 
