@@ -23,13 +23,11 @@ const Wrapper = styled.div``;
 
 
 const Text = styled.p`
-  text-indent: 32px;
   font-size: 24px;
-  max-width: 51ch;
-  padding-bottom: 8px;
+  max-width: 30ch;
+  padding-bottom: 16px;
 
   @media (max-width: 550px) {
-    text-indent: revert;
     font-size: 20px;
   }
 `;
