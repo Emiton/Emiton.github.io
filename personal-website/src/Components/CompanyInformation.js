@@ -53,6 +53,7 @@ const WorkDates = styled.p``;
 
 const WorkDescription = styled.p`
   max-width: 50ch;
+  font-size: 20px;
 `;
 
 
