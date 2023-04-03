@@ -1,13 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
+import ReactGA from 'react-ga'
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Home from './Home';
 import NavBar from './NavBar';
 import ToolsAndWork from './ToolsAndWork';
 
-
 function App() {
+  ReactGA.initialize('346716928');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <Wrapper className="App">
       <NavBar />
@@ -26,8 +29,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   min-height: 100%;
   font-family: 'Satoshi', sans-serif;
-  padding: 16px;
-  margin: 16px;
+  margin: 32px;
 `;
 
 export default App;
