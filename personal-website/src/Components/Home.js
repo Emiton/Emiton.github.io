@@ -1,7 +1,16 @@
 import styled from "styled-components";
+import ReactGA from 'react-ga4'
+import { useEffect } from "react";
 import IntroDetail from "./IntroDetail";
 
 function Home() {
+
+  useEffect (() => {
+    ReactGA.initialize('G-3TDTV0914Y');
+    ReactGA.send({hitType: 'pageview', page: '/', title: 'Home page'});
+  })
+
+
   return (
       <IntroWrapper>
         <Intro>Hi! My name is Emiton.</Intro>
