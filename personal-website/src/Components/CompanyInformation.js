@@ -23,6 +23,7 @@ function CompanyInformation() {
   return (
     <div>
       {companyInfoList}
+      <div style={{marginBottom: "32px"}}/>
     </div>
   );
 }

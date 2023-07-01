@@ -17,10 +17,17 @@ export const TOOLS = [
 
 export const COMPANY_INFO = [
   {
+    companyName: 'Empower Project',
+    jobTitle: 'Senior Full-stack Software Engineer',
+    workLocation: 'Madison, WI',
+    workDates: 'June 2021 - June 2023',
+    workDescription: 'At Empower, I work as a Senior Software Senior who builds across the entire technical stack. This entails shipping front-end code, doing light design work, working with the product team, developing and launching backend features, database design, developing and deploying mobile applications in React Native, deploying and managing infrastructure in AWS, and working with our Product team and clients to develop design documents for new features. Most of my work is done in a JavaScript based tech stack which includes React, Node, React Native, and TypeScript.',
+  },
+  {
     companyName: 'Amazon Go',
     jobTitle: 'Full-stack Software Engineer',
     workLocation: 'Westborough, MA',
-    workDates: 'June 2021 - Present',
+    workDates: 'June 2021 - June 2023',
     workDescription: 'My role with Amazon Go entails full-stack development using a JavaScript based tech stack. On the services team I mainly create services for various internal products within the Amazon Go ecosystem. I also write end to end features for internal teams and customers. I generally collaborate with the product team for front-end design. I have created both web and mobile apps. AWS powers the backend, utilizing serverless technology to build performant apps and services that scale under varying loads.',
   },
   {
