@@ -20,7 +20,7 @@ export const COMPANY_INFO = [
     companyName: 'Empower Project',
     jobTitle: 'Senior Full-stack Software Engineer',
     workLocation: 'Madison, WI',
-    workDates: 'June 2021 - June 2023',
+    workDates: 'June 2023 - Present',
     workDescription: 'At Empower, I work as a Senior Software Senior who builds across the entire technical stack. This entails shipping front-end code, doing light design work, working with the product team, developing and launching backend features, database design, developing and deploying mobile applications in React Native, deploying and managing infrastructure in AWS, and working with our Product team and clients to develop design documents for new features. Most of my work is done in a JavaScript based tech stack which includes React, Node, React Native, and TypeScript.',
   },
   {
